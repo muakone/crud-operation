@@ -6,7 +6,7 @@ const mongoose = require('mongoose')
 const shopItemsRoute = require('./routes/shopItems')
 const authRoute = require('./routes/auth')
 
-const connect = mongoose.connect(process.env.mongoDBURL)
+const connect = mongoose.connect("mongodb+srv://muak1ayomide:qk699uDLpyXsMsMg@cluster0.hlihzya.mongodb.net/")
 
 connect.then(() => {
     console.log("connected to db successfully")
